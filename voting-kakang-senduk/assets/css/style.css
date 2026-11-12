@@ -1,0 +1,36 @@
+:root {
+  --forest: #183c35;
+  --forest-deep: #102b26;
+  --gold: #d7ad58;
+  --cream: #f7f4ed;
+  --ink: #20312d;
+}
+
+body { background: #fbfaf7; color: var(--ink); min-height: 100vh; display: flex; flex-direction: column; }
+main { flex: 1; }
+.site-nav { background: var(--forest); box-shadow: 0 3px 18px #12292320; }
+.brand-mark { display: inline-grid; place-items: center; width: 31px; height: 31px; margin-right: 5px; border-radius: 50%; color: var(--forest); background: var(--gold); font-size: .75rem; }
+.btn-gold { background: var(--gold); border-color: var(--gold); color: var(--forest-deep); font-weight: 700; }
+.btn-gold:hover { background: #c99d46; border-color: #c99d46; color: var(--forest-deep); }
+.hero { background: radial-gradient(circle at 85% 20%, #52715a 0, transparent 34%), linear-gradient(120deg, var(--forest-deep), var(--forest)); color: white; overflow: hidden; position: relative; }
+.hero:after { content: ""; position: absolute; width: 370px; height: 370px; border: 1px solid #ffffff20; border-radius: 50%; right: -80px; bottom: -240px; box-shadow: 0 0 0 35px #ffffff08, 0 0 0 75px #ffffff08; }
+.hero-content { position: relative; z-index: 1; }
+.eyebrow { color: var(--gold); font-size: .78rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+.section-title { color: var(--forest); font-weight: 800; }
+.card { border: 1px solid #e9e5dc; border-radius: 1rem; }
+.contestant-card { overflow: hidden; transition: transform .18s ease, box-shadow .18s ease; }
+.contestant-card:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem #183c3518 !important; }
+.contestant-photo { width: 100%; height: 245px; object-fit: cover; background: #e8e3d7; }
+.placeholder-photo { display: grid; place-items: center; width: 100%; height: 245px; background: linear-gradient(135deg, #d8caa9, #f1ede4); color: var(--forest); font-size: 4rem; font-weight: 800; }
+.badge-kakang { background: #e7f0e9; color: #285a3b; }
+.badge-senduk { background: #f6e8ec; color: #8a3c55; }
+.site-footer { color: #dbe5df; background: var(--forest-deep); font-size: .9rem; }
+.stat-card { background: white; border-radius: 1rem; padding: 1.25rem; border: 1px solid #e9e5dc; height: 100%; }
+.stat-value { color: var(--forest); font-size: 1.8rem; font-weight: 800; }
+.podium-card { border-top: 4px solid var(--gold); }
+.rank-number { display: inline-grid; place-items: center; width: 34px; height: 34px; border-radius: 50%; color: var(--forest); background: #f3ead4; font-weight: 800; }
+.auth-wrap { min-height: 72vh; display: grid; place-items: center; padding: 3rem 1rem; background: radial-gradient(circle at top right, #e6ecdf, transparent 45%); }
+.form-control, .form-select { border-color: #ddd8cb; padding-top: .65rem; padding-bottom: .65rem; }
+.form-control:focus, .form-select:focus { border-color: #73947f; box-shadow: 0 0 0 .2rem #183c3518; }
+.table > :not(caption) > * > * { padding: .8rem; }
+@media (max-width: 575px) { .hero { text-align: center; } .contestant-photo, .placeholder-photo { height: 220px; } }
